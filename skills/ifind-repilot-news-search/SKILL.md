@@ -1,9 +1,10 @@
 ---
 name: ifind-repilot-news-search
-description: 通过问句语义化搜索全市场金融资讯（新闻、舆情、市场动态等），返回与问句相关的新闻片段信息。当需要检索金融新闻、市场资讯、行业动态、公司舆情等信息时，使用此 skill。
-metadata:  {"openclaw":{"emoji":"📰︎","requires":{"bins":["python3"]}}}
+description: Searches real-time financial news, corporate announcements, and market sentiment via iFind.
+license: Apache-2.0
+metadata:
+  provider: "ifind"
 ---
-
 ## 概述
 
 此 skill 通过自然语言问句查询（向量检索）全市场金融资讯。它调用封装好的 Python 脚本，向同花顺数据接口发送请求，返回与问句相关的新闻列表信息。支持按照时间范围查询。

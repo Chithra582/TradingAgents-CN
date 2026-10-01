@@ -1,0 +1,13 @@
+name: "news-sentiment-screener"
+description: "Scans regulatory filings, company announcements, and financial news for sentiment shifts."
+input_schema:
+  type: "object"
+  properties:
+    query_keyword:
+      type: "string"
+      description: "Topic keyword, company name, or industry sector."
+    time_window_days:
+      type: "integer"
+      description: "Time horizon in days for news aggregation."
+  required:
+    - "query_keyword"

@@ -1,0 +1,63 @@
+spec_version: "0.1.0"
+name: "tradingagents-cn-market-analyst"
+version: "1.0.0"
+description: >
+  Multi-agent research and market analysis platform orchestrating specialized analyst agents
+  for Chinese A-share fundamental, technical, and news debates.
+author: "Chithra R"
+license: "Apache-2.0"
+
+model:
+  preferred: "claude-3-5-sonnet"
+  fallback:
+    - "gpt-4o"
+    - "gemini-2.0-flash"
+  constraints:
+    temperature: 0.1
+    max_tokens: 8192
+
+skills:
+  - a-share-runtime-data-access
+  - ifind-repilot-finance-data-search
+  - ifind-repilot-news-search
+  - multi-agent-debate-orchestration
+
+tools:
+  - a-share-quote-fetcher
+  - financial-statement-analyzer
+  - multi-agent-debate-engine
+  - news-sentiment-screener
+  - natural-language-stock-screener
+
+runtime:
+  max_turns: 25
+  temperature: 0.1
+  timeout: 180
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - mitre-atlas
+    - owasp-llm
+  data_governance:
+    pii_handling: redact
+    data_classification: confidential
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - finance
+  - a-share
+  - stock-research
+  - multi-agent-debate
+  - trading-agents
+  - quantitative-analysis
+
+metadata:
+  domain: "finance"
+  category: "Finance"

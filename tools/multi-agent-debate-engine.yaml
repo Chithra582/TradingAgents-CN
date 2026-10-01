@@ -1,0 +1,17 @@
+name: "multi-agent-debate-engine"
+description: "Executes structured multi-perspective debate rounds between bull and bear analyst personas."
+input_schema:
+  type: "object"
+  properties:
+    ticker:
+      type: "string"
+      description: "Target company ticker under analysis."
+    debate_depth:
+      type: "integer"
+      description: "Debate depth tier from 1 (brief summary) to 5 (exhaustive audit)."
+    focus_topic:
+      type: "string"
+      description: "Key topic under scrutiny e.g. valuation, revenue_growth, competitive_moat."
+  required:
+    - "ticker"
+    - "debate_depth"

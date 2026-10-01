@@ -1,13 +1,8 @@
 ---
 name: stock-cyq-analyzer
-description: >
-  筹码分布分析工具（CYQ - Chip Distribution）。
-  基于量价数据计算获利盘比例、主力成本区、筹码集中度等专业指标。
-  使用三角分布模型，支持A股所有股票。
-  Use when: 用户提到"筹码分布"、"筹码分析"、"CYQ"、"获利盘"、"主力成本"、"筹码集中度"、"90%成本"。
-  NOT for: 推荐买卖时机、预测股价走势、给出投资建议。
+description: Analyzes chip concentration and筹码分布 (CYQ) for A-share stocks.
+license: Apache-2.0
 ---
-
 # CYQ 筹码分布分析工具
 
 ## 技能概述

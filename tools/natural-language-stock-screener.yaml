@@ -1,0 +1,16 @@
+name: "natural-language-stock-screener"
+description: "Filters the 6,000+ A-share universe using natural language criteria and quantitative metrics."
+input_schema:
+  type: "object"
+  properties:
+    criteria_prompt:
+      type: "string"
+      description: "Natural language description of desired stock characteristics."
+    sector_filter:
+      type: "string"
+      description: "Optional industry sector restriction e.g. semiconductor, healthcare."
+    max_results:
+      type: "integer"
+      description: "Maximum number of candidate stocks to return."
+  required:
+    - "criteria_prompt"

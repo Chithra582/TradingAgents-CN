@@ -1,0 +1,16 @@
+name: "a-share-quote-fetcher"
+description: "Fetches quotes, price histories, valuation ratios, and technical indicators for A-share tickers."
+input_schema:
+  type: "object"
+  properties:
+    ticker:
+      type: "string"
+      description: "A-share stock ticker symbol e.g. 600519.SH or 000858.SZ."
+    period:
+      type: "string"
+      description: "Data interval: daily, weekly, or monthly."
+    lookback_days:
+      type: "integer"
+      description: "Number of calendar days of price history to retrieve."
+  required:
+    - "ticker"

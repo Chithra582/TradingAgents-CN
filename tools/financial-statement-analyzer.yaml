@@ -1,0 +1,17 @@
+name: "financial-statement-analyzer"
+description: "Analyzes quarterly and annual financial reports, operating margins, and solvency metrics."
+input_schema:
+  type: "object"
+  properties:
+    ticker:
+      type: "string"
+      description: "A-share ticker identifier."
+    report_year:
+      type: "integer"
+      description: "Fiscal year of the financial statement."
+    statement_type:
+      type: "string"
+      description: "Report type: income_statement, balance_sheet, or cash_flow."
+  required:
+    - "ticker"
+    - "statement_type"

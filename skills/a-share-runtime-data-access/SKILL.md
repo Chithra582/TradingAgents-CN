@@ -1,7 +1,8 @@
 ---
 name: a-share-runtime-data-access
 description: Use when the task requires reading A-share stock data, financial data, valuation context, or querying local stock collections through core.skill_runtime runtime interfaces.
-metadata: '{"nanobot":{"always":true}}'
+metadata:
+  platform: "nanobot"
 ---
 
 # A-share Runtime Data Access
